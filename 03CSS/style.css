@@ -1,0 +1,75 @@
+@media screen and (min-device-width: 1200px) and (max-device-width: 1920px){
+ .week div {
+     display: inline-block;
+     width: 100px;
+     height: 20px;
+     background: #e8e8e8;
+     border-radius: 5px;
+     border: solid 1px #000;
+     color: #888;
+     margin: 0 -2px;
+     position: relative;
+     cursor: pointer;
+ } 
+ .week div:hover {
+     background: rgb(226, 226, 122);
+ }
+ div .meals {display: none;}
+ .meals div { 
+     width: 100px;
+     height: 20px;
+     border-radius: 5px;
+     border: solid 1px #000;
+     color: #888;
+     cursor: pointer;
+     background: #e8e8e8;
+     margin: -1px 1px 0px 0px;
+    }
+    .week div:hover .meals {
+        display: block;
+        position: absolute;
+        /*top:100%;*/
+        z-index: 2;
+        background: #567;
+        margin: 2px 0px 0px -1px;
+    }
+}
+@media only screen and (min-device-width: 420px) and (max-device-width:740px) {
+    div .week {
+        width: 150px;
+    }
+    .week div {
+        display: inline-block;
+        width: 100px;
+        height: 20px;
+        background: #e8e8e8;
+        border-radius: 5px;
+        border: solid 1px #000;
+        color: #888;
+        margin: 0 -2px;
+        position: relative;
+        cursor: pointer;  
+    }
+    .week div:hover {
+        background: rgb(226, 226, 122);}
+        div .meals {display: none;}
+ .meals div { 
+     width: 100px;
+     height: 20px;
+     border-radius: 5px;
+     border: solid 1px #000;
+     color: #888;
+     cursor: pointer;
+     background: #e8e8e8;
+     margin: -1px 1px 0px 0px;
+    }
+    .week div:hover .meals {
+        display: block;
+        position: absolute;
+        /*top:100%;*/
+        z-index: 2;
+        background: #567;
+        margin: 2px 0px 0px -1px;
+    }
+}
+    
