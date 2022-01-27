@@ -1,0 +1,25 @@
+table {
+    border: solid gray 1px;
+}
+tr:first-child td {
+    background: #777;
+}
+td {
+    border-bottom: dotted #777 2px;
+}
+td:not(:last-child){
+    border-right: botted #777 2px ;
+}
+td:first-child {
+   font-weight: bold;
+}
+tr:nth-child(odd):not(:last-child) {
+    background: #999;
+}
+tr:hover td {
+    background-color: lightgreen;
+}
+tr:last-child td {
+    font-weight: normal;
+    text-transform: uppercase;
+}
