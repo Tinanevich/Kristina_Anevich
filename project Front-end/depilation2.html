@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+    <form name='INFO' action='http://fe.it-academy.by/TestForm.php' novalidate>
+        Введите Имя: <input type='text' name='NAME' placeholder="Мария"><br>
+        Введите номер телефона: <input type='text' name='NUMBER' placeholder="375336005475"><br>
+        <input type='submit' value='готово'>
+    </form>
+    
+    <script>
+    
+        var formElement=document.forms.INFO;
+        formElement.onsubmit=validateInfoForm;
+    
+        function validateInfoForm() {
+    
+            var nameElement=formElement.elements.NAME;
+            var numberElement=formElement.elements.NUMBER;
+    
+            var nameValue=nameElement.value;
+            var numberValue=parseInt(numberElement.value.trim());
+    
+            if ( nameValue.length>15 ) {
+                alert('Введите, пожалуйста, имя не длиннее 15 символов!');
+                nameElement.focus();
+                return false;
+            }
+    
+            if ( isNaN(numberValue.length>12 ) ) {
+                alert('Введите, пожалуйста, номер не длиннее 12 символов!');
+                numberElement.focus();
+                return false;
+            }
+    
+    
+            return true;
+        }
+    
+    </script>
+    
+    
+</body>
+</html>
